@@ -1,0 +1,46 @@
+body {
+
+
+    background-image: url('../assets/images/Pizza\ 6.png');
+    /*background-size:80% auto;*/       /* A imagem cobre toda a tela */
+    background-repeat: no-repeat; /* A imagem não se repete */
+    /* background-position: center; */
+    background-size: 1675px 1024px;
+
+
+
+
+    margin: 0;
+    padding: 10;
+}
+
+h2, p {
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    display: flex;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover:not(.active) {
+    background-color: #111111;
+}
+
+ul li a.active {
+    background-color: #04AA6D;
+}
+
+.letter{
+    color:white;
+}
