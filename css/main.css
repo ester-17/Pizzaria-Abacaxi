@@ -8,10 +8,7 @@
 body {
     /* background-image: url('../assets/images/Pizza\ 6.png');*/
 
-    background: radial-gradient(ellipse at right center ,  #ff7a18, #0f0f0f 60%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
+
 
     color: white;
 }
@@ -44,21 +41,22 @@ ul li a.active {
 }
 
 
-.menu{
+
+/* .menu{
     font-family:sans-serif;
     font-weight: bold;
 }
 
 .menu button {
     /* background: rgb(255, 72, 0); */
-    background: linear-gradient(135deg, #ff4040, #ff9f1c);
+    /* background: linear-gradient(135deg, #ff4040, #ff9f1c);
     padding: 10px 22px;
     border-radius: 30px;
     color: white;
     text-decoration: none;
     font-size: 0.9rem;
     transition: 0.3s;
-}
+}  */
 
 /* HERO SECTION */ 
 .hero{
@@ -67,6 +65,12 @@ ul li a.active {
     align-items: center;
     padding: 0 6vw; /* 0 sup/inf and 6vw (viewport) 6% each side*/
     gap: 3rem;
+
+    background: radial-gradient(ellipse at right center ,  #ff7a18, #0f0f0f 60%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
 }
 
 /* LEFT SIDE */
