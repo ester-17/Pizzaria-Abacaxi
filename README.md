@@ -32,3 +32,10 @@ It's a landing page for a fictional pizzeria, just for practice
     │
     ├── favicon.ico
     └── README.md
+# Color Pallet
+- Colors for Pizzeria
+#FFD700 : Amarelo, luminoso representa queijo (e abacaxi)
+#8B4513 : Terroso, aconchegante, remete à massa
+#F2711C : Lanranja, Alegre, quente, remete queijo derretido (abacaxi)
+#D90841 : Vermelho, vibrante, estimula apetite, associado ao molho
+#00960083 : Verde, coroa do abacaxi

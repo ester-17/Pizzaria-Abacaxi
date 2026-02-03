@@ -1,17 +1,19 @@
-body {
-
-
-    background-image: url('../assets/images/Pizza\ 6.png');
-    /*background-size:80% auto;*/       /* A imagem cobre toda a tela */
-    background-repeat: no-repeat; /* A imagem não se repete */
-    /* background-position: center; */
-    background-size: 1675px 1024px;
-
-
-
-
+* {
     margin: 0;
-    padding: 10;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* background-image: url('../assets/images/Pizza\ 6.png');*/
+
+    background: radial-gradient(ellipse at right center ,  #ff7a18, #0f0f0f 60%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+    color: white;
 }
 
 h2, p {
@@ -38,9 +40,134 @@ ul li a:hover:not(.active) {
 }
 
 ul li a.active {
-    background-color: #04AA6D;
+    background-color: #8B4813;
 }
 
-.letter{
-    color:white;
+
+.menu{
+    font-family:sans-serif;
+    font-weight: bold;
+}
+
+.menu button {
+    /* background: rgb(255, 72, 0); */
+    background: linear-gradient(135deg, #ff4040, #ff9f1c);
+    padding: 10px 22px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+/* HERO SECTION */ 
+.hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 6vw; /* 0 sup/inf and 6vw (viewport) 6% each side*/
+    gap: 3rem;
+}
+
+/* LEFT SIDE */
+.hero-left {
+    width: 40%;
+}
+
+.hero-left h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-left p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+}
+
+.hero-left button {
+    background: transparent;
+    border: 2px solid #ff4d4d;
+    color: white;
+    padding:10px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-left button:hover {
+  background: #ff4d4d;
+}
+
+/* RIGHT SIDE */
+.hero-right{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* MAIN TITLE */
+.title {
+    font-family: "Caveat", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10rem;
+    font-style: italic;
+    /* font-size: clamp(4rem, 8vq, 7rem); */
+    animation: titleEnter 1.2s ease-out forwards;
+}
+
+.subtitle {
+    margin-top: 1rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards;
+    animation-delay: 0.8s;
+}
+
+/* ANIMATIONS */
+@keyframes titleEnter {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 4rem 2rem;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-left {
+        margin-top: 2rem;
+    }
 }
